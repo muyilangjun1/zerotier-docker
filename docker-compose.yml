@@ -8,6 +8,7 @@ services:
     network_mode: host
     volumes:
       - '/var/lib/zerotier-my:/var/lib/zerotier-one'
+      - './scripts/planet:/var/lib/zerotier-one/planet'
     cap_add:
       - NET_ADMIN
       - SYS_ADMIN
